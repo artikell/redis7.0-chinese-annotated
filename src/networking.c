@@ -4126,6 +4126,7 @@ int areClientsPaused(void) {
 /* Checks if the current client pause has elapsed and unpause clients
  * if it has. Also returns true if clients are now paused and false 
  * otherwise. */
+/* 检查当前客户端暂停是否已过，如果已过，则取消暂停客户端。如果客户端现在暂停，则返回true，否则返回false */
 int checkClientPauseTimeoutAndReturnIfPaused(void) {
     if (!areClientsPaused())
         return 0;
